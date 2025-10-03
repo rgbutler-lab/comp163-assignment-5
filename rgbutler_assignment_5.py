@@ -19,3 +19,18 @@ while current_number != 1:
 print(f"\nSteps: {step_count}")
 print("")
 
+#Challenge 2: Prime number tester:
+print("=== Challenge 2: Prime Number Tester ===")
+n = int(input("Enter a number greater than 1: "))
+print(f"Testing divisors from 2 to {n - 1}...")
+
+# Check divisibility from 2 to n-1
+for divisor in range(2, n):
+    # Check if is not prime
+    if n % divisor == 0:
+        print(f"{n} is not prime (divisible by {divisor})")
+        break
+# Check if is prime
+else:
+    print(f"{n} is prime!")
+
