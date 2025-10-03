@@ -34,3 +34,20 @@ for divisor in range(2, n):
 else:
     print(f"{n} is prime!")
 
+#Challenge 3: Multiplication table:
+print("\n=== Challenge 3: Multiplication Table ===")
+print("Multiplication Table:")
+# Print header row
+print("   ", end="")
+for col in range(1, 11):
+    print(f"{col:4}", end="")
+print()
+
+# Print multiplication table
+for row in range(1, 11):
+    print(f"{row:2}", end=" ")  # Row label
+    for col in range(1, 11):
+        product = row * col
+        print(f"{product:4}", end="")  # Product
+    print()  # New line after each row
+
